@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="search-frame">
+  <view class="search-content">
+    <input  bindinput="SearchInputEvent" bindchange='Search_Gif'type="text"/>
+    <icon type="search" size="15"/>
+  </view>
+</view>
+
+<view class="container">
+  <!--<loading hidden = true>
+    表情填装中
+  </loading>-->
+
+  <scroll-view class='gifs-list' scroll-y='true' bindscrolltolower="LoadMore" bindscrolltoupper='Refresh_GIF' scroll-top='200'style="height:{{Dev_Height}}">
+    <view class='gifs'>
+      <block wx:for="{{gifs.list}}">
+        <view class='gifs-item' id='{{item.gif_sid}}' catchtap='Look_GIF'>
+          <image data-src='{{item.gif_under_1M}}' src='{{item.gif_cover_url}}' mode= 'aspectFit'></image>
+        </view>	
+      </block>
+    </view> 
+    </scroll-view>
+  </view>
+
+<modal class="gifs-preview" hidden="{{Hidden_detail}}" bindconfirm='Send_GIF' bindcancel='Cancel_detail'confirmText='预览' >
+  <view class='gifs-detail'>
+	  <image src='{{gif_url}}' mode='aspectFit'></image>
+  </view>
+</modal>
+
+
+
+<view class ="footer">
+  <image src="../../image/logo2.png" mode='aspectFit'></image>
+</view>

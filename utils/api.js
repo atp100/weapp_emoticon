@@ -3,8 +3,8 @@ const HOST_URL = 'https://api.piggif.com/v1/'
 var TOKEN = 'token?appid={APPID}&secret={SECRET}';
 var SEARCH = 'gifs/search?accessToken={TOKEN}&query={QUERY}&pageSize=20&pageNo=1 ';
 var TOP = 'gifs/trending?accessToken={TOKEN}&pageSize=10';
-var APPID = 'p3s965249';
-var SECRET = 'b2c1964272505d0c2f6ed3dac5b39327';
+var APPID = '';
+var SECRET = '';
 
 
 function _getToken(){

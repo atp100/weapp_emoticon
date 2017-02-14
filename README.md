@@ -1,6 +1,6 @@
 # weapp_emoticon
 
-一款用于搜索表情包的微信小程序demo
+>微信小程序入坑之作：一款用于搜索表情包的微信小程序demo
 
 ![](https://raw.githubusercontent.com/atp100/weapp_emoticon/master/demo.gif)
 

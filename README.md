@@ -2,7 +2,7 @@
 
 一款用于搜索表情包的微信小程序demo
 
-![](http://https://github.com/atp100/weapp_emoticon/blob/master/demo.gif)
+![](https://raw.githubusercontent.com/atp100/weapp_emoticon/master/demo.gif)
 
 ## 项目描述
 - 基于[「小猪动图」](http://open.piggif.com/blog/api)制作的一款用于搜索表情包的微信小程序
